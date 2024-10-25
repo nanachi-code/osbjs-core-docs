@@ -1,19 +1,19 @@
-# Scale
+# MoveX
 
 ::: info
 Inherits: [TypedCommand](./typedcommand)
 :::
 
-Change the size of the object relative to its original size.
+Move the object along the y axis.
 
 Example:
 
 ```ts
-new Scale({
+new MoveX({
   startTime: 0,
   endTime: 1000,
-  startValue: 1,
-  endValue: 0.5,
+  startValue: 0,
+  endValue: 100,
   easing: 3
 })
 ```
@@ -21,7 +21,7 @@ new Scale({
 ## Constructor details
 
 ```ts
-new Scale({
+new MoveX({
   startTime,
   endTime,
   startValue,
@@ -34,9 +34,9 @@ new Scale({
 
   - `startTime` (`number | string | Timestamp`) ([Timestamp](./timestamp)): The start time of the animation.
   - `endTime` (`number | string | Timestamp | undefined`) ([Timestamp](./timestamp)): The end time of the animation. Defaults to `undefined`.
-  - `startValue` (`number`): The starting scale value or vector.
-  - `endValue` (`number | undefined`): The ending scale value or vector. Defaults to `undefined`.
-  - `easing` (`Easing | undefined`) ([Easing](./easing)): The easing function for the scale animation. Defaults to `undefined`.
+  - `startValue` (`number`): The starting X position.
+  - `endValue` (`number | undefined`): The ending X position. Defaults to `undefined`.
+  - `easing` (`Easing | undefined`) ([Easing](./easing)): The easing function for the moveX animation. Defaults to `undefined`.
 
 ## Properties
 

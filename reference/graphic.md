@@ -86,8 +86,8 @@ Move the object along the y axis.
 
   - `props.startTime` (`number | string | Timestamp`) ([Timestamp](./timestamp)): The start time of the animation.
   - `props.endTime` (`number | string | Timestamp | undefined`) ([Timestamp](./timestamp)): The end time of the animation. Defaults to `undefined`.
-  - `props.startValue` (`number`): The starting Y position of the move.
-  - `props.endValue` (`number | undefined`): The ending Y position of the move. Defaults to `undefined`.
+  - `props.startValue` (`number`): The starting Y position.
+  - `props.endValue` (`number | undefined`): The ending Y position. Defaults to `undefined`.
   - `props.easing` (`Easing | undefined`) ([Easing](./easing)): The easing function for the moveY animation. Defaults to `undefined`.
 
 - Returns: `this`
@@ -136,7 +136,7 @@ Rotate the object around its origin.
 
 ### `color(props)`
 
-Scale the object each side individually.
+The virtual light source color on the object. The colors of the pixels on the object are determined subtractively.
 
 - Parameters:
 

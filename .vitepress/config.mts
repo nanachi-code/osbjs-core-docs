@@ -53,6 +53,8 @@ export default defineConfig({
               { text: 'Fade', link: 'fade' },
               { text: 'Rotate', link: 'rotate' },
               { text: 'Move', link: 'move' },
+              { text: 'MoveX', link: 'movex' },
+              { text: 'MoveY', link: 'movey' },
               { text: 'Scale', link: 'scale' },
               { text: 'ScaleVec', link: 'scalevec' },
               { text: 'Color', link: 'color' },
