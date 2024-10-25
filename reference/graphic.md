@@ -32,7 +32,7 @@ The position of the element.
 
 Array of commands for animations and transformations.
 
-- Type: `Command[]` ([Command](./commands))
+- Type: `Command[]` ([Command](./command))
 
 ## Methods
 
