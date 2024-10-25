@@ -8,7 +8,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Guide', link: '/guide/getting-started' },
-      { text: 'Reference', link: '/reference/graphic' },
+      { text: 'Reference', link: '/reference/graphic' }
     ],
 
     sidebar: {
@@ -21,15 +21,15 @@ export default defineConfig({
               { text: 'Getting started', link: 'getting-started' },
               {
                 text: 'Your first storyboard',
-                link: 'your-first-storyboard',
-              },
-            ],
+                link: 'your-first-storyboard'
+              }
+            ]
           },
           {
             text: 'Diving deeper',
-            items: [{ text: 'Components', link: 'components' }],
-          },
-        ],
+            items: [{ text: 'Components', link: 'components' }]
+          }
+        ]
       },
       '/reference': {
         base: '/reference/',
@@ -42,8 +42,8 @@ export default defineConfig({
               { text: 'Animation', link: 'animation' },
               { text: 'Sample', link: 'sample' },
               { text: 'Component', link: 'component' },
-              { text: 'Storyboard', link: 'storyboard' },
-            ],
+              { text: 'Storyboard', link: 'storyboard' }
+            ]
           },
           {
             text: 'Storyboard commands',
@@ -63,8 +63,8 @@ export default defineConfig({
               { text: 'Additive', link: 'additive' },
               { text: 'CompoundCommand', link: 'compoundcommand' },
               { text: 'Trigger', link: 'trigger' },
-              { text: 'Loop', link: 'loop' },
-            ],
+              { text: 'Loop', link: 'loop' }
+            ]
           },
 
           {
@@ -77,25 +77,28 @@ export default defineConfig({
               { text: 'Vector2', link: 'vector2' },
               { text: 'Timestamp', link: 'timestamp' },
               { text: 'Color3', link: 'color3' },
-              { text: 'TriggerType', link: 'triggertype' },
-            ],
-          },
-        ],
-      },
+              { text: 'TriggerType', link: 'triggertype' }
+            ]
+          }
+        ]
+      }
     },
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/osbjs/osbjs' }],
+
+    footer: {
+      copyright: '© 2024-present Nanachi'
+    }
   },
   markdown: {
-    lineNumbers: true,
     async shikiSetup(shiki) {
       const osbLang = JSON.parse(
-        fs.readFileSync(path.join(__dirname, 'osb.tmLanguage.json'), 'utf8'),
+        fs.readFileSync(path.join(__dirname, 'osb.tmLanguage.json'), 'utf8')
       )
       const osuLang = JSON.parse(
-        fs.readFileSync(path.join(__dirname, 'osu.tmLanguage.json'), 'utf8'),
+        fs.readFileSync(path.join(__dirname, 'osu.tmLanguage.json'), 'utf8')
       )
       await shiki.loadLanguage(osbLang, osuLang)
-    },
-  },
+    }
+  }
 })
