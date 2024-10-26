@@ -23,7 +23,7 @@ new Color3(color)
 ```
 
 - Parameters:
-  - `color` (`IColor3 | Color3Tuple`): A tuple of [r, g, b], or an object with r, g and b properties.
+  - `color` (`IColor3 | number[]`): A tuple of [r, g, b], or an object with r, g and b properties.
 
 ```ts
 new Color3(hex)
