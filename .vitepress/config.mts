@@ -9,7 +9,7 @@ export default defineConfig({
     nav: [
       { text: 'Guide', link: '/guide/getting-started' },
       { text: 'Reference', link: '/reference/graphic' },
-      { text: '1.0.0-alpha.4' }
+      { text: '1.0.0-alpha.4', link: 'https://github.com/osbjs/osbjs' }
     ],
 
     sidebar: {
